@@ -18,3 +18,5 @@ That said, my code revolves using Methods, Constructors and Utility functions (a
 (iii) Trainer - both classes are combined using the Trainer class, which allows us to train models on a variety of hardware platforms.
 
 Anyways, the read-me will be periodically updated as I make progress. Wish me luck!
+
+I plan to maintain a development sandbox in which I push my code periodically. Once I push working code to my satisfaction I plan to merge it with Master. The idea is to keep master branch as clean as possible while trying out different ideas on the development sandbox branch.
