@@ -17,4 +17,4 @@ That said, my code revolves using Methods, Constructors and Utility functions (a
 (ii)DataModule - provides data loaders for training and validation;
 (iii) Trainer - both classes are combined using the Trainer class, which allows us to train models on a variety of hardware platforms.
 
-Anyways, the read-me will be periodically updated as I make progress. Wish me luck!!
+Anyways, the read-me will be periodically updated as I make progress. Wish me luck!
