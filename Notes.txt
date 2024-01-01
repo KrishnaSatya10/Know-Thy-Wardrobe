@@ -1,0 +1,15 @@
+https://discuss.pytorch.org/t/why-the-forward-function-is-never-be-called/109498
+
+https://stackoverflow.com/questions/48001598/why-do-we-need-to-call-zero-grad-in-pytorch
+
+torch.optim module comprises of optimizers (eg. Adam, SGD etc) -- all the weights and biases which are updated by the optimizers need to be declared as "Variable" type to allow the optimizer to work efficiently with these model parameters
+After every minibatch run the gradients need to be reset to 0, i.e once we have updated the weights and biases with one pass through a minibatch we need to call optimizer.zero_grad() - since the gradients in Pytorch are accumulative. 
+
+General Observation: Pytorch seems to have more of accumulators, iterators, generators types of functions rather than the actual function. 
+Eg. We have nn.CrossEntropyLoss which is different from the actual function F.CrossEntropy
+
+The scratch implmentation (D2L, page 141) seems to create variables for parameters (W and b)
+
+https://github.com/pytorch/pytorch/blob/main/torch/nn/modules/linear.py
+
+In Pytorch weights and biases are initialized by default. We can also initialize using a Xavier equation??
