@@ -68,4 +68,4 @@ if __name__ == "__main__":
 
 
 # Command line should be like this
-# python run.py --model_name model_a --device cuda
+# python run.py --model_name model_a --device cuda ...
