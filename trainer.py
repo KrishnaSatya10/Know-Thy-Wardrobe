@@ -11,9 +11,6 @@ class Trainer:
         data_preparation.load_training_data()
         data_preparation.load_test_data()
 
-    def visualize_data(self, labels_map, data_preparation):
-        data_preparation.visualize_data(labels_map)
-
     def prepare_model(self, model):
         self.model = model
         print("Printing the model template", model)

@@ -5,7 +5,7 @@ from config import LinearClassifierConfig
 
 
 class LinearClassifier(nn.Module):
-    def __init__(self, root="data", batch_size=64, num_classes=10, image_size=(28, 28)):
+    def __init__(self, root, batch_size, num_classes, image_size):
         super().__init__()
         """
         We initialize the nn.Flatten layer to convert each 2D 28x28 image into a contiguous array of 784 pixel values

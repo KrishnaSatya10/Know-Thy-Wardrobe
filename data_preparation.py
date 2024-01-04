@@ -11,10 +11,10 @@ class DataPreparation:
 
     def __init__(
         self,
-        root="data",
-        batch_size=64,
-        num_classes=10,
-        image_size=(28, 28),
+        root,
+        batch_size,
+        num_classes,
+        image_size,
         transform=True,
         target_transform=True,
     ):
