@@ -1,6 +1,6 @@
 README IS WIP - AS I MAKE PROGRESS IN MY UNDERSTANDING OF PYTORCH AND DL, I WILL KEEP UPDATING THIS IN THE PROJECT
 
-In this repo I am to implement Deep-Learning based image classification on the FashionMNIST dataset which contains imgaes of clothing items in gray scale (28 x 28). I implement the classigication using:
+In this repo I seek to implement Deep-Learning based image classification on the FashionMNIST dataset which contains imgaes of clothing items in gray scale (28 x 28). I implement the classification using:
 
 - Linear Classification based Neural Network (no hidden layers)
 - Deep Learning based Neural Network
@@ -11,19 +11,31 @@ I seek to design my implementation to adhere to Pytorch-ic guideline which uses 
 That said, my code revolves using Methods, Constructors and Utility functions (as evident for the networks built from scratch) primarily belonging to 3 major Classes for developing the end-to-end model:
 
 (i) Module (LinearClassifier, DeepClassifier, CNNClassifier) - contains models, losses, and optimization methods;
+
 (ii) DataPreparation - provides data loaders for training and validation;
+
 (iii) Trainer - both classes are combined using the Trainer class, which allows us to train models on a variety of hardware platforms.
 
 Anyways, the read-me will be periodically updated as I make progress. Wish me luck!
 
-I plan to maintain a development sandbox in which I push my code periodically. Once I push working code to my satisfaction I plan to merge it with Master. The idea is to keep master branch as clean as possible while trying out different ideas on the development sandbox branch.
+I will maintain separate branches for every model I create -- the idea is to mimic the "features" we see in Jira and coding up a feature -- master branch needs to be clean while I try out ideas in the individual feature branches. Once I push working code to my satisfaction I plan to merge it with Master.
+
+GITHUB ACTIONS:
+I plan to use github actions to apply some checks before pull requests are merged to master. Specifically:
+
+- Am I able to run the model successfully to the end
+- Are all the black formatting checks passing?
+- Are there any linter errors?
+
+I need to learn how to implement github actions for this. Okay! Let's learn something new!!
 
 OKAY, THE FOLDER STRUCTURE I HAVE IN MIND:
 
-- Config.py
-- Trainer.py
-- DataPreparation.py
-- LinearClassifier.py
-- DeepClassifier.py
-- CNNClassifier.py
-- notes.txt
+- config.py
+- trainer.py
+- data_preparation.py
+- linear_classifier.py
+- deep_classifier.py
+- cnn_lassifier.py
+- run.py
+- Notes.txt
